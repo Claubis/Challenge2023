@@ -1,18 +1,19 @@
-package projetoChallenge;
+package challenge2023;
+
+import java.util.Scanner;
 
 public class Usuario {
     private int ID;
     private String nome;
     private String email;
     private String senha;
-    private String plataforma;
 
     public Usuario(int ID, String nome, String email, String senha, String plataforma) {
         this.ID = ID;
         this.nome = nome;
         this.email = email;
         this.senha = senha;
-        this.plataforma = plataforma;
+
     }
 
     public int getID() {
@@ -47,23 +48,26 @@ public class Usuario {
         this.senha = senha;
     }
 
-    public String getPlataforma() {
-        return plataforma;
-    }
-
-    public void setPlataforma(String plataforma) {
-        this.plataforma = plataforma;
-    }
 
     public void autenticarUsuario() {
-        // Implementar do método autenticarUsuario
+        // Implementar do método autenticarUsuario quando ele digitar o login e a senha.
     }
 
     public void registrarNovoUsuario() {
-        // Implementar do método registrarNovoUsuario
+        System.out.println("Para cadastrar um novo usuário, preencha as informações abaixo: ");
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite seu nome: ");
+        String nome = scanner.next();
+        System.out.println("Digite seu e-mail: ");
+        String email = scanner.next();
+        System.out.println("Digite sua senha: ");
+        String senha = scanner.next();
+        System.out.println("Usuário registrado com sucesso! ");
+        System.out.println("---------------------------");
     }
 
     public void guardarDataHora() {
-        // Implementar do método guardarDataHora
+        // Implementar do método guardarDataHora - Preciso saber como chamar a hora aqui.
     }
 }

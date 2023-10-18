@@ -1,4 +1,6 @@
-package projetoChallenge;
+package challenge2023;
+
+import java.util.Scanner;
 
 public class LoginAcesso {
     private int ID;
@@ -55,8 +57,17 @@ public class LoginAcesso {
         this.dataHoraAcesso = dataHoraAcesso;
     }
 
-    public void registrarAcesso(int usuarioID, String enderecoIP) {
-        // Implementação do método registrarAcesso
+    // Validar o login no site
+    public void registrarAcessoSistema() {
+    	
+    	Scanner scanner = new Scanner(System.in);
+    	
+    	System.out.println("Digite seu e-mail: ");
+        String email = scanner.next();
+        
+        System.out.println("Digite sua senha: ");
+        String senha = scanner.next();
+    	
+    	System.out.println("Usuário logado com sucesso! ");
     }
 }
-
